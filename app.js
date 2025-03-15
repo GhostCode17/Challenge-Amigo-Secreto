@@ -29,3 +29,18 @@ function agregarAmigo()
         alert("Por favor, inserte un nombre");
     }
 }
+
+function sortearAmigo()
+{
+    if (listadoDeAmigos.length)
+    {
+        let indiceAleatorio = Math.floor(Math.random() * listadoDeAmigos.length);
+        let amigoSeleccionado = listadoDeAmigos[indiceAleatorio];
+
+        document.getElementById('resultado').innerHTML = `${amigoSeleccionado} has sido sorteado!`;
+    }
+    else
+    {
+        alert("Ningún amigo que sortear");
+    }
+}
