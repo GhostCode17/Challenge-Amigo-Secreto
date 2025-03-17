@@ -38,6 +38,9 @@ function sortearAmigo()
         let amigoSeleccionado = listadoDeAmigos[indiceAleatorio];
 
         document.getElementById('resultado').innerHTML = `${amigoSeleccionado} has sido sorteado!`;
+        document.getElementById('listaAmigos').innerHTML = "";
+
+        listadoDeAmigos = []; // vaciar la lista
     }
     else
     {
